@@ -1,0 +1,70 @@
+---
+
+---
+
+<header>
+  <nav>
+    <ul>
+      <li class="logo"><img src="/Assets/logo.png" alt="logo" /></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style lang="scss">
+  header {
+    background-color: rgb(17, 0, 75);
+    margin: auto;
+
+    //
+    & nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    & nav ul li.logo {
+      background: transparent;
+    }
+    & nav ul li.logo img {
+      height: 120px;
+
+      @media screen and (max: width 1000px) {
+        height: 50px;
+      }
+    }
+    & nav ul li.logo:hover {
+      border-color: transparent;
+    }
+    & nav ul li {
+      background-color: black;
+      margin: 20px;
+      padding: 15px;
+
+      // Borders
+      border: 2px solid transparent;
+      border-radius: 15px;
+
+      // Animation
+      transform: scale(1);
+      transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    & nav ul li:hover {
+      border-color: blueviolet;
+      transform: scale(1.3);
+    }
+    & nav ul li a {
+      color: white;
+      font-size: 2rem;
+      text-decoration: none;
+    }
+    & nav ul li::marker {
+      content: "";
+    }
+  }
+
+  header nav ul li::marker {
+    content: none;
+  }
+</style>

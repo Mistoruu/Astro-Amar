@@ -1,0 +1,27 @@
+---
+interface Props {
+    page_title:string;
+    heading_title: String;
+}
+
+const {page_title, heading_title} = Astro.props;
+---
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> Projects </a></li>
+            <li><a href="#"> about </a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <p> {page_title}</p>
+    </nav>
+    <h1> {heading_title}</h1>
+</header>
+
+<style lang="scss" is:global>
+
+
+</style>
