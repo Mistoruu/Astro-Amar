@@ -1,0 +1,40 @@
+---
+
+---
+
+<div class="project">
+  <div class="card">
+    <p>PROJECTS</p>
+  </div>
+
+  <div class="media">
+    <slot />
+  </div>
+</div>
+<style lang="scss">
+  .project {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 180px;
+    color: white;
+    font-size: 2.2rem;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .project .media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+</style>

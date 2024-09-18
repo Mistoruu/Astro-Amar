@@ -6,9 +6,10 @@
   <nav>
     <ul>
       <li class="logo"><img src="/Assets/logo.png" alt="logo" /></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">About</a></li>
+      <li class="contact-button"><a href="#">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -26,6 +27,7 @@
     }
     & nav ul li.logo {
       background: transparent;
+      margin-right: auto;
     }
     & nav ul li.logo img {
       height: 120px;
@@ -37,6 +39,9 @@
     & nav ul li.logo:hover {
       border-color: transparent;
     }
+    & nav ul li.contact-button {
+      margin-left: auto;
+    }
     & nav ul li {
       background-color: black;
       margin: 20px;
@@ -44,7 +49,7 @@
 
       // Borders
       border: 2px solid transparent;
-      border-radius: 15px;
+      border-radius: 5px;
 
       // Animation
       transform: scale(1);
