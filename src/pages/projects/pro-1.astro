@@ -1,0 +1,27 @@
+---
+import WebLayout from "../../layouts/WebLayout.astro";
+---
+
+<WebLayout language="fr" title="Project 1">
+  <h1>Mes Projets Informatiques</h1>
+
+  <!-- Projet 1 -->
+  <div class="project-1">
+    <img src="/Assets/projet_default.jpg" alt="Gestion des tâches" />
+    <div>
+      <h2>Projet 1 : Application de gestion des tâches</h2>
+      <p>
+        Ce projet est une application web qui permet aux utilisateurs de gérer
+        efficacement leurs tâches quotidiennes. Elle inclut des fonctionnalités
+        comme la création de tâches, la gestion des priorités, et l'intégration
+        avec Google Calendar.
+      </p>
+      <a href="#" class="btn">Voir les détails</a>
+      <!-- Vidéo du projet 1 -->
+      <video controls>
+        <source src="video-gestion-taches.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la balise vidéo.
+      </video>
+    </div>
+  </div>
+</WebLayout>

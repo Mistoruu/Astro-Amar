@@ -1,3 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 html{
     
+}
+.link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+    height: 15rem;
+  }
+main {
+& .intro{
+    //Margin & Padding
+    padding: 20px;
+    margin-top: 120px;
+    & h1{
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+    & p {
+        font-size: 1.5rem;
+        width: 50%;
+    }
+}
+& .projects {
+    //Margin & Padding
+    padding: 20px;
+    margin-top: 120px;
+    & h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+ & .about {
+    //Margin & Padding
+    padding: 20px;
+    margin-top: 120px;
+    & h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    & .about-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    & p {
+        font-size: 1.5rem;
+        text-align: center;
+        width: 70%;
+    }
+  }
 }
