@@ -1,0 +1,30 @@
+---
+interface Props {
+  src: string;
+  title: string;
+}
+
+const { src, title } = Astro.props;
+---
+
+<li class="skills-icon">
+  <img src={src} alt={title} />
+  <h3 class="h3-skills">{title}</h3>
+</li>
+
+<style lang="scss">
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & img {
+      max-height: 48px;
+      max-width: 48px;
+    }
+    & .h3-skills {
+      color: white;
+      font-weight: bold;
+      bottom: 5px;
+    }
+  }
+</style>

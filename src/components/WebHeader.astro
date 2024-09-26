@@ -7,22 +7,24 @@
     <ul>
       <li class="logo">
         <img
-          src="/Assets/em-logo-black-transparent.png"
+          src="/Assets/em-logo-white-transparent.png"
           alt="logo"
           class="header-logo-img"
         />
       </li>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/index.html#projects">Projects</a></li>
-      <li><a href="/index.html#about">About</a></li>
-      <li class="contact-button"><a href="#">Contact</a></li>
+      <li><a href="/index.html">Accueil</a></li>
+      <li><a href="/index.html#projects">Projets</a></li>
+      <li><a href="/index.html#about">À Propos de moi</a></li>
+      <li class="contact-button">
+        <a href="mailto:maille.eliott@gmail.com">Contact</a>
+      </li>
     </ul>
   </nav>
 </header>
 
 <style lang="scss">
+  @import "../styles/config.scss";
   header {
-    background-color: rgb(17, 0, 75);
     margin: auto;
 
     //
@@ -49,7 +51,6 @@
       margin-left: auto;
     }
     & nav ul li {
-      background-color: black;
       margin: 20px;
       padding: 15px;
 
@@ -61,17 +62,33 @@
       transform: scale(1);
       transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
-    & nav ul li:hover {
-      border-color: blueviolet;
-      transform: scale(1.3);
-    }
+
     & nav ul li a {
-      color: white;
       font-size: 2rem;
-      text-decoration: none;
-    }
-    & nav ul li::marker {
-      content: "";
+      position: relative; // Nécessaire pour que le pseudo-élément se positionne correctement
+      color: white; // Couleur initiale du texte
+      text-decoration: none; // Supprime le soulignement par défaut
+
+      // Pseudo-élément pour créer le soulignement
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px; // Positionne le soulignement juste sous le texte
+        width: 0; // Commence avec une largeur de 0
+        height: 2px; // Épaisseur de la ligne
+        background-color: $background-1; // Utilise la couleur de fond pour le soulignement
+        transition: width 0.3s ease-in-out; // Transition pour animer la largeur
+      }
+
+      // Animation lors du survol
+      &:hover::after {
+        width: 100%; // Étend la ligne sur toute la largeur du texte
+      }
+
+      &:hover {
+        color: $background-1; // Change la couleur du texte au survol
+      }
     }
   }
 

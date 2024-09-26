@@ -1,50 +1,67 @@
 ---
 import WebLayout from "../layouts/WebLayout.astro";
 import Card from "../components/Card.astro";
+import CardProject from "../components/CardProject.astro";
+import Skills from "../components/Skills.astro";
 ---
 
 <WebLayout language="fr" title="Test">
-  <main>
-    <div class="intro">
+  <main class="project">
+    <div id="intro" class="section">
       <h1>Eliott Maillé</h1>
       <p>
-        Je m'appelle Eliott Maillé, étudiant en informatique passionné par le
-        développement web et l'IA. Je maîtrise plusieurs langages de
-        programmation et aime relever des défis techniques à travers des projets
-        innovants.
+        Je m'appelle Eliott Maillé, étudiant en informatique actuellement en 2e
+        année de BTS SIO (Services informatiques aux organisations) <br />option
+        SLAM (solutions logicielles et applications métiers). Passionné par
+        l'informatique et en particulier la programmation. Je maîtrise plusieurs
+        langages de programmation et aime relever des défis techniques à travers
+        des projets innovants.
       </p>
     </div>
-    <div id="projects" class="projects">
-      <h2>Section Projets</h2>
+    <div id="projects" class="section">
+      <h2 class="h2-project">Projets</h2>
       <ul class="link-card-grid">
         <Card
+          img="/Assets/projet_default.jpg"
           href="/projects/pro-1.html"
-          title="projet 1"
-          body="Ceci est un exemple de projet"
+          title="Site Portfolio"
+          body="Site portfolio développé 'from scratch'"
         />
         <Card
+          img="/Assets/projet_default.jpg"
           href="/projects/pro-2.html"
           title="projet 2"
           body="Ceci est un exemple de projet"
         />
         <Card
+          img="/Assets/projet_default.jpg"
           href="/projects/pro-3.html"
           title="projet 3"
           body="Ceci est un exemple de projet"
         />
       </ul>
     </div>
-    <div id="about" class="about">
+    <div id="skills" class="section">
+      <h2>Compétences</h2>
+      <ul class="ul-skills">
+        <Skills src="/Assets/ico-Astro.png" title="Astro" />
+        <Skills src="/Assets/ico-HTML.png" title="HTML" />
+        <Skills src="/Assets/ico-CSS.png" title="CSS" />
+        <Skills src="/Assets/ico-JS.png" title="JS" />
+        <Skills src="/Assets/ico-TS.png" title="TS" />
+        <Skills src="/Assets/ico-Python.png" title="Python" />
+      </ul>
+    </div>
+    <div id="about" class="section">
       <h2>Section About</h2>
       <div class="about-text">
         <p>
           Passionné par les technologies et le développement informatique, je
           suis un étudiant en informatique avec un fort intérêt pour la
-          programmation, les systèmes embarqués et l'intelligence artificielle.
-          Au cours de mes études, j'ai acquis des compétences solides dans
-          divers langages de programmation tels que Python, JavaScript et C++,
-          tout en développant une expertise dans le développement web et le
-          machine learning. Toujours à la recherche de nouveaux défis, je
+          programmation. Au cours de mes études, j'ai acquis des compétences
+          solides dans divers langages de programmation tels que Python,
+          JavaScript et PHP, tout en développant une expertise dans le
+          développement web. Toujours à la recherche de nouveaux défis, je
           m'efforce de rester à la pointe des innovations technologiques et
           d'appliquer mes connaissances à des projets concrets. Mon objectif est
           de transformer ma passion pour la technologie en solutions créatives
