@@ -1,25 +1,55 @@
 ---
 import WebLayout from "../../layouts/WebLayout.astro";
+import "/src/styles/config.scss";
+import "/src/styles/test.scss";
 ---
 
 <WebLayout language="fr" title="Project 2">
-  <!-- Projet 2 -->
-  <div class="project-2">
-    <img src="/Assets/projet_default.jpg" alt="Plateforme d'apprentissage" />
-    <div>
-      <h2>Projet 2 : Plateforme d'apprentissage en ligne</h2>
+  <main class="main-project">
+    <h1>Projet : Site de jeu de plateau</h1>
+
+    <!-- Projet 2 -->
+    <div class="project-1">
+      <h2>Présentation du projet</h2>
       <p>
-        Une plateforme qui permet aux étudiants de suivre des cours en ligne, de
-        soumettre des devoirs, et d'accéder à des forums de discussion. Le
-        projet inclut une interface intuitive et une gestion des utilisateurs
-        avancée.
+        Ce projet est un site de jeu de plateau développé from scratch en
+        JavaScript. L'objectif est de se familiariser avec les technolgies du
+        développement Web par l'apprentissage d'un framework ainsi que de
+        consolider mes compétences en JavaScript, HTML et SCSS.
       </p>
-      <a href="#" class="btn">Voir les détails</a>
-      <!-- Vidéo du projet 2 -->
-      <video controls>
-        <source src="video-plateforme-apprentissage.mp4" type="video/mp4" />
-        Votre navigateur ne supporte pas la balise vidéo.
-      </video>
+      <a href="https://mistoruu.github.io/" class="btn-project"
+        >Voir le projet</a
+      >
+      <!--Medias -->
+      <ul class="media-project">
+        <li>
+          <img
+            src="/Assets/Project1-image1.PNG"
+            alt="this image couldn't load"
+          />
+        </li>
+        <li>
+          <img
+            src="/Assets/Project1-image2.PNG"
+            alt="this image couldn't load"
+          />
+        </li>
+        <li>
+          <img src="/Assets/projet_default.jpg" alt="can't load image" />
+        </li>
+      </ul>
+      <p>
+        Astro est un framework web moderne conçu pour créer des sites
+        ultra-rapides en optimisant les performances. Il utilise une approche
+        appelée "Islands Architecture", qui permet de générer des pages
+        principalement statiques, avec seulement des parties interactives
+        chargées lorsque c'est nécessaire. Cela réduit le JavaScript utilisé et
+        améliore les temps de chargement. Astro est compatible avec des outils
+        comme React, Vue, Svelte, et des styles comme Tailwind ou Sass, offrant
+        une grande flexibilité. Il est parfait pour les blogs, portfolios et
+        sites marketing où la rapidité est essentielle.
+      </p>
+      <a href="https://astro.build/" class="btn-project">En savoir plus sur Astro</a>
     </div>
-  </div>
+  </main>
 </WebLayout>

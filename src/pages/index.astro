@@ -3,6 +3,8 @@ import WebLayout from "../layouts/WebLayout.astro";
 import Card from "../components/Card.astro";
 import CardProject from "../components/CardProject.astro";
 import Skills from "../components/Skills.astro";
+import "../styles/config.scss";
+import "../styles/test.scss";
 ---
 
 <WebLayout language="fr" title="Test">
@@ -19,38 +21,52 @@ import Skills from "../components/Skills.astro";
       </p>
     </div>
     <div id="projects" class="section">
-      <h2 class="h2-project">Projets</h2>
+      <h2 class="h2-project">Mes Projets</h2>
       <ul class="link-card-grid">
         <Card
-          img="/Assets/projet_default.jpg"
+          img="/Assets/Project1-image1.PNG"
           href="/projects/pro-1.html"
           title="Site Portfolio"
           body="Site portfolio développé 'from scratch'"
         />
         <Card
-          img="/Assets/projet_default.jpg"
+          img="/Assets/Project2-image1.png"
           href="/projects/pro-2.html"
-          title="projet 2"
-          body="Ceci est un exemple de projet"
+          title="EM Board Games"
+          body="Site web pour jouer à des jeux de plateaux"
         />
         <Card
-          img="/Assets/projet_default.jpg"
+          img="/Assets/dbzdokkan.jpg"
           href="/projects/pro-3.html"
-          title="projet 3"
-          body="Ceci est un exemple de projet"
+          title="Dokkan Battle Automation"
+          body="Automatisation de tâches en Python"
         />
       </ul>
     </div>
     <div id="skills" class="section">
-      <h2>Compétences</h2>
+      <h2>Mes Compétences</h2>
       <ul class="ul-skills">
         <Skills src="/Assets/ico-Astro.png" title="Astro" />
         <Skills src="/Assets/ico-HTML.png" title="HTML" />
         <Skills src="/Assets/ico-CSS.png" title="CSS" />
-        <Skills src="/Assets/ico-JS.png" title="JS" />
-        <Skills src="/Assets/ico-TS.png" title="TS" />
+        <Skills src="/Assets/ico-JS.png" title="JavaScript" />
+        <Skills src="/Assets/ico-TS.png" title="TypeScript" />
+        <Skills src="/Assets/ico-NodeJs.png" title="Node Js" />
         <Skills src="/Assets/ico-Python.png" title="Python" />
+        <Skills src="/Assets/ico-CSharp.png" title="C#" />
+        <Skills src="/Assets/github_ico.png" title="Github" />
+        <Skills src="/Assets/ico-Docker.png" title="Docker" />
       </ul>
+      <p>
+        En plus de ma formation initiale et des projets que j'entreprends, je
+        n'hésite pas à me former par l'apprentissage de nouvelles technologies
+        et de nouveaux langages de programmation via des formations spécialisés
+        sur internet.
+      </p>
+
+      <span class="certif-link-main"
+        ><a href="certifs.html">→ Voir toutes mes certifications</a></span
+      >
     </div>
     <div id="about" class="section">
       <h2>Section About</h2>

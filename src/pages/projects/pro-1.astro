@@ -1,5 +1,7 @@
 ---
 import WebLayout from "../../layouts/WebLayout.astro";
+import "/src/styles/config.scss";
+import "/src/styles/test.scss";
 ---
 
 <WebLayout language="fr" title="Project 1">
@@ -15,8 +17,8 @@ import WebLayout from "../../layouts/WebLayout.astro";
         du développement Web par l'apprentissage d'un framework ainsi que de
         consolider mes compétences en JavaScript, HTML et SCSS.
       </p>
-      <a href="https://mistoruu.github.io/" class="btn-project"
-        >Voir le projet</a
+      <span class="btn-project"
+        ><a href="https://mistoruu.github.io/">Voir le projet</a></span
       >
       <!--Medias -->
       <ul class="media-project">
@@ -47,7 +49,9 @@ import WebLayout from "../../layouts/WebLayout.astro";
         une grande flexibilité. Il est parfait pour les blogs, portfolios et
         sites marketing où la rapidité est essentielle.
       </p>
-      <a href="https://astro.build/" class="btn-project">En savoir plus</a>
+      <span class="btn-project"
+        ><a href="https://astro.build/">En savoir plus</a>
+      </span>
     </div>
   </main>
 </WebLayout>
