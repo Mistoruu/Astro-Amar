@@ -26,12 +26,15 @@ const { img, href, title, body } = Astro.props;
     flex-direction: column;
     background-color: $background-card;
     border-radius: 7px;
+    max-width: 380px;
 
     & img {
       height: 300px;
       max-width: 100%;
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
+      object-fit: cover;
+      object-position: left top;
     }
     & h2 {
       font-size: 1.8rem;
