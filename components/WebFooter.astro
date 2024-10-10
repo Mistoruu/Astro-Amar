@@ -1,0 +1,64 @@
+---
+
+---
+
+<footer>
+  <p>
+    This website was created entirely from scratch using the Astro Framework.
+  </p>
+  <nav>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/eliott-maille/" target="_blank"
+          ><img
+            src="../../Assets/linkedin_logo_icon_181286.png"
+            alt="linkedin"
+          /></a
+        >
+        <li>
+          <a href="https://github.com/Mistoruu" target="_blank"
+            ><img src="../../Assets/github_ico.png" alt="github" /></a
+          >
+          <li>
+            <a href="mailto:maille.eliott@gmail.com"
+              ><img src="../../Assets/MailFavicon.png" alt="mail" /></a
+            >
+          </li>
+        </li>
+      </li>
+    </ul>
+  </nav>
+  <p>© 2024 Eliott Maillé</p>
+</footer>
+<style lang="scss">
+  footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 2.5rem;
+    & p {
+      text-align: center;
+    }
+    & nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+    }
+    & nav ul li {
+      margin: 20px;
+      padding: 15px;
+    }
+    & nav ul li a {
+      color: white;
+      font-size: 2rem;
+      text-decoration: none;
+    }
+    & nav ul li a img {
+      height: 30px;
+      width: 30px;
+    }
+    & nav ul li::marker {
+      content: "";
+    }
+  }
+</style>
