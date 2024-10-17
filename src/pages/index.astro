@@ -1,6 +1,7 @@
 ---
 import WebLayout from "../layouts/WebLayout.astro";
 import Card from "../components/Card.astro";
+import CardProject from "../components/CardProject.astro";
 import Skills from "../components/Skills.astro";
 import "../styles/config.scss";
 import "../styles/portfolio.scss";
@@ -22,23 +23,39 @@ import "../styles/portfolio.scss";
     <div id="projects" class="section">
       <h2>Mes Projets</h2>
       <ul class="link-card-grid">
-        <Card
+        <CardProject
           img="/Assets/Project1-image1.PNG"
           href="/projects/pro-1.html"
           title="Site Portfolio"
           body="Site portfolio développé 'from scratch'"
+          technologies={[
+            { iconUrl: "/Assets/ico-Astro.png", iconName: "Astro" },
+            { iconUrl: "/Assets/ico-TS.png", iconName: "TS" },
+            { iconUrl: "/Assets/ico-HTML.png", iconName: "HTML5" },
+            { iconUrl: "/Assets/ico-CSS.png", iconName: "CSS" },
+          ]}
         />
-        <Card
+        <CardProject
           img="/Assets/Project2-image1.png"
           href="/projects/pro-2.html"
           title="EM Board Games"
           body="Site web pour jouer à des jeux de plateaux"
+          technologies={[
+            { iconUrl: "/Assets/ico-JS.png", iconName: "JS" },
+            { iconUrl: "/Assets/ico-HTML.png", iconName: "HTML5" },
+            { iconUrl: "/Assets/ico-CSS.png", iconName: "CSS" },
+            { iconUrl: "/Assets/ico-PHP.png", iconName: "PHP" },
+          ]}
         />
-        <Card
+        <CardProject
           img="/Assets/project3-default.jpg"
           href="/projects/pro-3.html"
           title="Dokkan Battle Automation"
           body="Automatisation de tâches en Python"
+          technologies={[
+            { iconUrl: "/Assets/ico-Python.png", iconName: "Python" },
+            { iconUrl: "/Assets/ico-Bash.png", iconName: "Bash" },
+          ]}
         />
       </ul>
     </div>
@@ -51,10 +68,13 @@ import "../styles/portfolio.scss";
         <Skills src="/Assets/ico-JS.png" title="JavaScript" />
         <Skills src="/Assets/ico-TS.png" title="TypeScript" />
         <Skills src="/Assets/ico-NodeJs.png" title="Node Js" />
+        <Skills src="Assets/ico-PHP.png" title="PHP" />
         <Skills src="/Assets/ico-Python.png" title="Python" />
         <Skills src="/Assets/ico-CSharp.png" title="C#" />
         <Skills src="/Assets/github_ico.png" title="Github" />
         <Skills src="/Assets/ico-Docker.png" title="Docker" />
+        <Skills src="/Assets/ico-SQL.png" title="SQL" />
+        <Skills src="/Assets/ico-Bash.png" title="Bash" />
       </ul>
       <p>
         En plus de ma formation initiale et des projets que j'entreprends, je
