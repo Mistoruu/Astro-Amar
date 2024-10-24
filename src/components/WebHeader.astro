@@ -14,7 +14,11 @@
       </li>
       <li><a href="/index.html">Accueil</a></li>
       <li><a href="/index.html#projects">Projets</a></li>
-      <li><a href="/index.html#about">À Propos de moi</a></li>
+      <li>
+        <a href="/index.html#about" id="header-about-responsive"
+          ><!--DOM Value --></a
+        >
+      </li>
       <li class="contact-button">
         <a href="mailto:maille.eliott@gmail.com">Contact</a>
       </li>
@@ -57,6 +61,7 @@
       // Borders
       border: 2px solid transparent;
       border-radius: 5px;
+
       @media screen and (max-width: $mobile-screen-size) {
         margin: 5px;
         padding: 3px;
@@ -96,3 +101,17 @@
     content: none;
   }
 </style>
+<script defer>
+  function updateAbout() {
+    let aboutText = document.querySelector("#header-about-responsive");
+    if (aboutText) {
+      if (window.innerWidth <= 1040) {
+        aboutText.textContent = "À propos";
+      } else {
+        aboutText.textContent = "À propos de moi";
+      }
+    }
+  }
+  updateAbout();
+  window.addEventListener("resize", updateAbout);
+</script>
