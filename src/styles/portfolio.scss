@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 html{
-   
+    
 }
 // Background colors
 
@@ -24,14 +24,14 @@ body {
     & p,h1,h2 {
         color: white;
     }
-  }
+}
 .link-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 2rem;
     padding: 0;
     height: 100%;
-  }
+}
 main {
     padding: 0px 70px;
     @media screen and (max-width:$mobile-screen-size){
@@ -43,7 +43,7 @@ main {
 }
 & #intro{
     & h1{
-       @include mixin-h1-responsive();
+        @include mixin-h1-responsive();
     }
     & p {
         font-size: 1.5rem;
@@ -88,7 +88,7 @@ main {
     &  .certif-link-main {
         display: block;
         text-align: center;
-       
+
         & a{
             text-decoration: none;
             color: white;
@@ -99,7 +99,7 @@ main {
     }
 
 }
- & #about {
+& #about {
     & h2 {
         @include mixin-h2-responsive();
     }
@@ -117,8 +117,8 @@ main {
             width: 100%;
         }
     }
-  }
-  @keyframes gradient {
+}
+@keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -173,21 +173,21 @@ main {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
             transition: transform 0.3s ease, box-shadow 0.3s ease; 
 
-      &:hover {
+        &:hover {
             transform: scale(1.1); 
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
-      }
+        }
     }
-  }
+    }
 
     li::marker {
         content: "";
     }
-  }
+    }
 & .btn-project {
     display: block;
         text-align: center;
-       
+        
         & a{
             text-decoration: none;
             color: white;
@@ -195,7 +195,7 @@ main {
             border-radius: 7px;
             padding: 7px;
         }
-  }
+}
 & .video-project{
     display: flex;
     justify-content: center;
